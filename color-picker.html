@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Advanced Color Picker</title>
+		<style>
+			/* CSS_PLACEHOLDER */
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h3>🎨 Палитра цветов</h3>
+
+			<div class="color-picker">
+				<div class="color-block">
+					<div class="circal" style="top: 0px"></div>
+					<canvas id="gradient-canvas"></canvas>
+				</div>
+
+				<div class="saturation-block">
+					<div class="circal" style="top: 0px; left: 0px"></div>
+					<canvas id="saturation-canvas"></canvas>
+				</div>
+
+				<div class="opasity-block">
+					<div class="circal" style="top: 0px"></div>
+					<canvas id="opasity-canvas"></canvas>
+				</div>
+			</div>
+
+			<div class="current-color-section">
+				<div class="current-color" id="currentColor"></div>
+				<div class="color-name-input">
+					<input
+						type="text"
+						id="colorNameInput"
+						placeholder="Название цвета (опционально)"
+					/>
+				</div>
+			</div>
+
+			<div class="color-formats" id="colorFormats"></div>
+
+			<div class="actions">
+				<button class="button" onclick="saveColor()">
+					💾 Сохранить цвет
+				</button>
+			</div>
+
+			<div class="saved-colors">
+				<h3>📁 Сохранённые цвета</h3>
+				<div id="savedColorsList"></div>
+			</div>
+		</div>
+
+		<script>
+			// JS_PLACEHOLDER
+		</script>
+	</body>
+</html>

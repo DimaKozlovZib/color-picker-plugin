@@ -1,0 +1,35 @@
+{
+    "name": "color-picker-extension",
+    "displayName": "Advanced Color Picker",
+    "description": "Палитра цветов с конвертацией в различные форматы",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.74.0"
+    },
+    "categories": ["Other"],
+    "main": "./extension.js",
+    "contributes": {
+        "viewsContainers": {
+            "activitybar": [
+                {
+                    "id": "color-picker-sidebar",
+                    "title": "Color Picker",
+                    "icon": "$(symbol-color)"
+                }
+            ]
+        },
+        "views": {
+            "color-picker-sidebar": [
+                {
+                    "id": "color-picker-view",
+                    "name": "Палитра цветов",
+                    "type": "webview"
+                }
+            ]
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "echo 'No prepublish script'",
+        "package": "vsce package"
+    }
+}
