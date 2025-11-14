@@ -371,7 +371,7 @@ function updateColorDisplay() {
 
 function updateColorFormats(color) {
     // Обновляет список форматов представления текущего цвета
-    console.log(1, color)
+
     // Список всех поддерживаемых форматов
     const formats = [
         { name: 'HEX', value: rgbToHex(color) },
@@ -381,7 +381,6 @@ function updateColorFormats(color) {
         { name: 'HEX8', value: rgbTo8DigitHex(color) },
         { name: 'HSV', value: rgbToHsv(color) },
     ];
-    console.log(formats)
 
     const container = document.getElementById('colorFormats');
     container.innerHTML = '';
@@ -442,8 +441,6 @@ function targetSavedColor(color) {
     if (opacityMatch) {
         window.opasity = parseFloat(opacityMatch[1]);
     }
-
-    console.log(window, values)
 
     // Обновление позиций кружков и перерисовка интерфейса
     updateCircalPositions();
